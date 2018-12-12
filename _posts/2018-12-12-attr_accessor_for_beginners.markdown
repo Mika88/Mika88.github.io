@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Attr_accessor for beginners"
-date:       2018-12-12 20:10:15 +0000
+date:       2018-12-12 15:10:16 -0500
 permalink:  attr_accessor_for_beginners
 ---
 
