@@ -14,10 +14,10 @@ let's say we build a Student class.
 ```
 class Student
   attr_accessor :name, :language
- 	def initialize(name, language)
-	  @name = name
-	  @language = language
-	end
+  def initialize(name, language)
+	 @name = name
+	 @language = language
+  end
 end
 
 bob = Student.new
@@ -35,14 +35,14 @@ The attr_reader method gives us the ability to read the attribute, however, it w
 
 ```
  class Student
-   attr_reader :name, :language
-	def name
+  attr_reader :name, :language
+  def name
 	 @name 
-	end
+  end
 
-	def language
-	  @language 
-	end
+ def language
+  @language 
+ end
 end
 
 bob = Student.new
@@ -58,13 +58,13 @@ In order to assign the attribute we use the attr_writer method:
 ```
  class Student
   attr_writer :name, :language
-	def name=(value)
-  	@name = value
-	end
+  def name=(value)
+   @name = value
+  end
 
-	def language=(value)
-	 @language = value
-	end
+ def language=(value)
+  @language = value
+ end
 end
 ```
 
