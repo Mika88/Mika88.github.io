@@ -28,11 +28,11 @@ For example:
    Takes in an argument of an index and returns the element in the given index position. 
 	 If the argument given is a negative index, it counts the index from the end of the array.
    
-   ```
-   a = [ "a", "b", "c", "d", "e" ]
-   a.at(0)     #=> "a"
-   a.at(-1)    #=> "e"
-  ```
+ ```
+  a = [ "a", "b", "c", "d", "e" ]
+  a.at(0)     #=> "a"
+  a.at(-1)    #=> "e"
+ ```
 	
 *   **#bsearch** 
 Uses a binary search and finds the first element that matches the condition inside a given block.
