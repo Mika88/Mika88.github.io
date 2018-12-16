@@ -10,7 +10,7 @@ Then, I started going over all the array methods in Ruby docs and realized there
 
 So here they are, with a short explanation and examples: 
 
-* ** #assoc(obj) and #rassoc(obj)**
+* **#assoc(obj) and #rassoc(obj)**
     These methods take in an object as an argument and by searching through an array, that its elements are also             arrays,  compare the object to the elements in the nested arrays using obj==. 
 	assoc(obj) compares the given object with the first element in each nested array, while  rssoc(obj) compares the object with the second element. Both methods return the first array that matches the object. 
 For example:
