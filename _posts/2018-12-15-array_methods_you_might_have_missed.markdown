@@ -34,15 +34,14 @@ For example:
   ```
 	
 *   **#bsearch** 
-Uses a binary search and finds the first element that matches the condition inside a given block. 
+Uses a binary search and finds the first element that matches the condition inside a given block.
 
  ```
-ary = [0, 4, 7, 10, 12]
-ary.bsearch {|x| x >=   4 } #=> 4
-ary.bsearch {|x| x >=   6 } #=> 7
-ary.bsearch {|x| x >=  -1 } #=> 0
-ary.bsearch {|x| x >= 100 } #=> nil
-
+ ary = [0, 4, 7, 10, 12]
+ ary.bsearch {|x| x >=   4 } #=> 4
+ ary.bsearch {|x| x >=   6 } #=> 7
+ ary.bsearch {|x| x >=  -1 } #=> 0
+ ary.bsearch {|x| x >= 100 } #=> nil
  ```
    
 * **#combination(n)**
