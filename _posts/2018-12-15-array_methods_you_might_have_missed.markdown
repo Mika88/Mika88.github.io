@@ -44,7 +44,6 @@ Uses a binary search and finds the first element that matches the condition insi
  ary.bsearch {|x| x >=   6 } #=> 7
  ary.bsearch {|x| x >=  -1 } #=> 0
  ary.bsearch {|x| x >= 100 } #=> nil
- 
  ```
    
 * **#combination(n)**
