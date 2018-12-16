@@ -106,14 +106,14 @@ Uses a binary search and finds the first element that matches the condition insi
    Rotates the order of the elements in an array, so that the first element will be the element in position *n* .
 	 The default position is 1, and when called with a negative number, the count will start from the end of the array. 
 	 
-  ```
+```
  a = [ "a", "b", "c", "d" ]
  a.rotate         #=> ["b", "c", "d", "a"]
  a   #=> ["a", "b", "c", "d"]
  a.rotate(2)      #=> ["c", "d", "a", "b"]
  a.rotate(-3)     #=> ["b", "c", "d", "a"] 
- ```
-	
-	This is it.. I bet there are more hidden methods out there, but I guess this is enough for now... 
-	I'm not sure when I'll use them, but it's good to know they're here ;)
+```
+ 
+This is it.. I bet there are more hidden methods out there, but I guess this is enough for now... 
+I'm not sure when I'll use them, but it's good to know they're here ;)
 	
