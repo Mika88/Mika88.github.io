@@ -32,7 +32,6 @@ For example:
    a = [ "a", "b", "c", "d", "e" ]
    a.at(0)     #=> "a"
    a.at(-1)    #=> "e"
-	 
   ```
 	
 *   **#bsearch** 
@@ -57,20 +56,17 @@ Uses a binary search and finds the first element that matches the condition insi
  a.combination(4).to_a  #=> [[1,2,3,4]]
  a.combination(0).to_a  #=> [[]] # one combination of length 0
  a.combination(5).to_a  #=> []   # no combinations of length 5
-
  ```
  
 *  **#concat(other_ary)**  
    Takes in an array as an argument and combines it with the array the method was invoked on. 
 
  ```
-
  [ "a", "b" ].concat( ["c", "d"] ) #=> [ "a", "b", "c", "d" ]
  
  a = [ 1, 2, 3 ]
  a.concat( [ 4, 5 ] )
  a     #=> [ 1, 2, 3, 4, 5 ]
-
  ```
  
 *  **#cycle(n=nil)**
@@ -86,44 +82,36 @@ Uses a binary search and finds the first element that matches the condition insi
    Drops the first *n* elements in the given array, and returns a new array without those elements. 
 	 
 	```
-	 
- a = [1, 2, 3, 4, 5, 0]
- a.drop(3)  #=> [4, 5, 0]
-	
+  a = [1, 2, 3, 4, 5, 0]
+  a.drop(3)  #=> [4, 5, 0]
 	```
 * 	**#drop_while**
     When called with a block, the method will drop the elements for which the block returns true. The array returned contains the remaining elements from the original array. 
 		
   ```
-
   a = [1, 2, 3, 4, 5, 0]
   a.drop_while {|i| i < 3 }   #=> [3, 4, 5, 0]
-
   ```
 
 * **#initialize_copy(ary)/#replace(ary)**
   Takes in an array as an argument, and replaces the array it was invoked on with the new array.  
 	
-	```
-	
+ ```
  a = [ "a", "b", "c", "d", "e" ]
  a.replace([ "x", "y", "z" ])   #=> ["x", "y", "z"]
  a    #=> ["x", "y", "z"]
-	
-	```
+```
 		
 * 	**#rotate(n =1)**
    Rotates the order of the elements in an array, so that the first element will be the element in position *n* .
 	 The default position is 1, and when called with a negative number, the count will start from the end of the array. 
 	 
-   ```
-	 
+  ```
  a = [ "a", "b", "c", "d" ]
  a.rotate         #=> ["b", "c", "d", "a"]
  a   #=> ["a", "b", "c", "d"]
  a.rotate(2)      #=> ["c", "d", "a", "b"]
- a.rotate(-3)     #=> ["b", "c", "d", "a"]
- 
+ a.rotate(-3)     #=> ["b", "c", "d", "a"] 
  ```
 	
 	This is it.. I bet there are more hidden methods out there, but I guess this is enough for now... 
