@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Array Methods You Might Have Missed"
-date:       2018-12-16 03:03:15 +0000
+date:       2018-12-15 22:03:16 -0500
 permalink:  array_methods_you_might_have_missed
 ---
 
@@ -35,6 +35,7 @@ For example:
 	
 *   **#bsearch** 
 Uses a binary search and finds the first element that matches the condition inside a given block. 
+
  ```
 ary = [0, 4, 7, 10, 12]
 ary.bsearch {|x| x >=   4 } #=> 4
