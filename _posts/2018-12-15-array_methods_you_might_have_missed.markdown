@@ -21,6 +21,7 @@ For example:
    a.assoc(3) # =>  [3, "three"]
    a.rassoc("two")    #=> [2, "two"]
    a.rassoc("four")   #=> nil
+	 
    ```
 
 *  **#at(index)**
@@ -31,6 +32,7 @@ For example:
    a = [ "a", "b", "c", "d", "e" ]
    a.at(0)     #=> "a"
    a.at(-1)    #=> "e"
+	 
   ```
 	
 *   **#bsearch** 
@@ -42,6 +44,7 @@ Uses a binary search and finds the first element that matches the condition insi
  ary.bsearch {|x| x >=   6 } #=> 7
  ary.bsearch {|x| x >=  -1 } #=> 0
  ary.bsearch {|x| x >= 100 } #=> nil
+ 
  ```
    
 * **#combination(n)**
