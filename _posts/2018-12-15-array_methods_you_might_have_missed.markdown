@@ -28,22 +28,22 @@ For example:
    Takes in an argument of an index and returns the element in the given index position. 
 	 If the argument given is a negative index, it counts the index from the end of the array.
    
-  ```
-  a = [ "a", "b", "c", "d", "e" ]
-  a.at(0)     #=> "a"
-  a.at(-1)    #=> "e"
-  ```
+   ```
+   a = [ "a", "b", "c", "d", "e" ]
+   a.at(0)     #=> "a"
+   a.at(-1)    #=> "e"
+   ```
 	
 *   **#bsearch** 
 Uses a binary search and finds the first element that matches the condition inside a given block.
 
-  ```
-  ary = [0, 4, 7, 10, 12]
-  ary.bsearch {|x| x >=   4 } #=> 4
-  ary.bsearch {|x| x >=   6 } #=> 7
-  ary.bsearch {|x| x >=  -1 } #=> 0
-  ary.bsearch {|x| x >= 100 } #=> nil
-  ```
+   ```
+   ary = [0, 4, 7, 10, 12]
+   ary.bsearch {|x| x >=   4 } #=> 4
+   ary.bsearch {|x| x >=   6 } #=> 7
+   ary.bsearch {|x| x >=  -1 } #=> 0
+   ary.bsearch {|x| x >= 100 } #=> nil
+   ```
    
 * **#combination(n)**
   When invoked on an array, returns all the different combinations by the length of *n*. 
@@ -61,22 +61,22 @@ Uses a binary search and finds the first element that matches the condition insi
 *  **#concat(other_ary)**  
    Takes in an array as an argument and combines it with the array the method was invoked on. 
 
-  ```
-  [ "a", "b" ].concat( ["c", "d"] ) #=> [ "a", "b", "c", "d" ]
+   ```
+   [ "a", "b" ].concat( ["c", "d"] ) #=> [ "a", "b", "c", "d" ]
  
-  a = [ 1, 2, 3 ]
-  a.concat( [ 4, 5 ] )
-  a     #=> [ 1, 2, 3, 4, 5 ]
-  ```
+   a = [ 1, 2, 3 ]
+   a.concat( [ 4, 5 ] )
+   a     #=> [ 1, 2, 3, 4, 5 ]
+   ```
  
 *  **#cycle(n=nil)**
    Can be called with a block or without a block. When called with a block it will loop *n* times, each time executing the code inside the block. If no block is given, will return an Enumerator.  
 	 
-  ```
-  a = ["a", "b", "c"]
-  a.cycle { |x| puts x }     # print, a, b, c, a, b, c,.. forever.
-  a.cycle(2) { |x| puts x }  # print, a, b, c, a, b, c.
-  ```
+   ```
+   a = ["a", "b", "c"]
+   a.cycle { |x| puts x }     # print, a, b, c, a, b, c,.. forever.
+   a.cycle(2) { |x| puts x }  # print, a, b, c, a, b, c.
+   ```
  
 *  **#drop(n)**
    Drops the first *n* elements in the given array, and returns a new array without those elements. 
@@ -88,10 +88,10 @@ Uses a binary search and finds the first element that matches the condition insi
 * 	**#drop_while**
     When called with a block, the method will drop the elements for which the block returns true. The array returned contains the remaining elements from the original array. 
 		
-   ```
-   a = [1, 2, 3, 4, 5, 0]
-   a.drop_while {|i| i < 3 }   #=> [3, 4, 5, 0]
-   ```
+    ```
+    a = [1, 2, 3, 4, 5, 0]
+    a.drop_while {|i| i < 3 }   #=> [3, 4, 5, 0]
+    ```
 
 * **#initialize_copy(ary)/#replace(ary)**
   Takes in an array as an argument, and replaces the array it was invoked on with the new array.  
@@ -106,13 +106,13 @@ Uses a binary search and finds the first element that matches the condition insi
    Rotates the order of the elements in an array, so that the first element will be the element in position *n* .
 	 The default position is 1, and when called with a negative number, the count will start from the end of the array. 
 	 
- ```
- a = [ "a", "b", "c", "d" ]
- a.rotate         #=> ["b", "c", "d", "a"]
- a   #=> ["a", "b", "c", "d"]
- a.rotate(2)      #=> ["c", "d", "a", "b"]
- a.rotate(-3)     #=> ["b", "c", "d", "a"] 
- ```
+  ```
+  a = [ "a", "b", "c", "d" ]
+  a.rotate         #=> ["b", "c", "d", "a"]
+  a   #=> ["a", "b", "c", "d"]
+  a.rotate(2)      #=> ["c", "d", "a", "b"]
+  a.rotate(-3)     #=> ["b", "c", "d", "a"] 
+  ```
  
 This is it.. I bet there are more hidden methods out there, but I guess this is enough for now... 
 I'm not sure when I'll use them, but it's good to know they're here ;)
