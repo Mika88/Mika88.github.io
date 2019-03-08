@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "Flowers for Me Rails Project"
-date:       2019-03-08 22:14:45 +0000
+title:      "Flowers For Me Rails Project"
+date:       2019-03-08 17:14:46 -0500
 permalink:  flowers_for_me_rails_project
 ---
 
