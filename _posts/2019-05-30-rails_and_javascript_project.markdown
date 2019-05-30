@@ -28,7 +28,7 @@ $('#all_arrangements').on('click', (e) => {
 	history.pushState(null, null, "arrangements")
 	getArrangements()
 })
-	```
+```
 
 Sending a jQuery get request to get a json object with the data:
 
