@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Rails and Java Script Project"
-date:       2019-05-30 22:36:50 +0000
+date:       2019-05-30 18:36:51 -0400
 permalink:  rails_and_java_script_project
 ---
 
@@ -36,7 +36,6 @@ For each page the work flow was quite similar, let's take the index page of arra
 	const getArrangements = () => {
 		$('#container').html('')
 		$.get("/arrangements.json", function(arrangements){
-		
 			})
 		})
 	}
