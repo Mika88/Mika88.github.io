@@ -20,7 +20,7 @@ After a few trial and error attampts I've found the right way so I could meet al
 
 For each page the work flow was quite similar, let's take the index page of arrangements as an example:
 
-1. Creatig a click event
+* Create a click event
 
   ``` 
 	$('#all_arrangements').on('click', (e) => {
@@ -30,7 +30,7 @@ For each page the work flow was quite similar, let's take the index page of arra
   })
 	```
 
-2. Send a jQuery get request to get a json object with the data
+*  Send a jQuery get request to get a json object with the data
 
 ```
 const getArrangements = () => {
@@ -41,7 +41,7 @@ const getArrangements = () => {
 	}
 ```
  
-3.  Build a new object using a constructor syntax
+*   Build a new object using a constructor syntax
 
 	```
 	function Arrangement(arrangement) {
@@ -57,7 +57,7 @@ const getArrangements = () => {
 
 	```
 
-4. Create a prototype function to render the html format to the page
+*  Create a prototype function to render the html format to the page
 
 	```
 	Arrangement.prototype.arrangementFormat = function() {
@@ -77,7 +77,7 @@ const getArrangements = () => {
 	}
 	```
 	
-5. Use the data retured from the get request to create a new object instance using the constructor, and call the prototype method on that new object 
+*  Use the data retured from the get request to create a new object instance using the constructor, and call the prototype method on that new object 
 
 	```
 		const getArrangements = () => {
