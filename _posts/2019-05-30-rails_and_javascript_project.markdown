@@ -62,16 +62,16 @@ Creating a prototype function to render the html format to the page:
 ```
 Arrangement.prototype.arrangementFormat = function() {
 	 let arrangementInfo = `
-			 <h3>${this.title}</h3>
-			 <h4>Description</h4>
-			 <p>${this.description}</p>
-			 <h4>Height: ${this.height}</h4>
-			 <h4>Price: $${this.price}</h4>
-			 <p><img src=${this.imageUrl} height="300" width="300"></p>
-			 <a class="orders_list" data-id="${this.id}" href="/arrangements/${this.id}/orders">Orders History</a>
-			 <p><a class="make_order_link" href="/arrangements/${this.id}/orders/new">Order Arrangement</a></p>
-			 <button data-id="${this.id}" class="previous-arrangement">Previous</button>
-			 <button data-id="${this.id}" class="next-arrangement">Next</button>
+		 <h3>${this.title}</h3>
+		 <h4>Description</h4>
+		 <p>${this.description}</p>
+		 <h4>Height: ${this.height}</h4>
+		 <h4>Price: $${this.price}</h4>
+		 <p><img src=${this.imageUrl} height="300" width="300"></p>
+		 <a class="orders_list" data-id="${this.id}" href="/arrangements/${this.id}/orders">Orders History</a>
+		 <p><a class="make_order_link" href="/arrangements/${this.id}/orders/new">Order Arrangement</a></p>
+		 <button data-id="${this.id}" class="previous-arrangement">Previous</button>
+		 <button data-id="${this.id}" class="next-arrangement">Next</button>
 	 `
 	 return arrangementInfo
  }
@@ -80,17 +80,17 @@ Arrangement.prototype.arrangementFormat = function() {
 Using the data retured from the get request to create a new object instance using the constructor, and call the prototype method on that new object:
 
 ```
- const getArrangements = () => {
-		 $('#container').html('')
-		 $.get("/arrangements.json", function(arrangements){
-				 arrangements.forEach(arrangement => {
-						 let newArrangement = new Arrangement(arrangement)
-						 let arrangementList = newArrangement.arrangementIndex() 
-						 $('#container').append(arrangementList)
-				 })
-		 })
- }
-	```
+const getArrangements = () => {
+	 $('#container').html('')
+	 $.get("/arrangements.json", function(arrangements){
+			 arrangements.forEach(arrangement => {
+				 let newArrangement = new Arrangement(arrangement)
+				 let arrangementList = newArrangement.arrangementIndex() 
+				 $('#container').append(arrangementList)
+			 })
+	 })
+}
+```
 	
 I must admit that switching between two languages in one project is quite confusing at first, espacially when being so used to Ruby for the majority of the curriculum.
 
