@@ -83,12 +83,12 @@ Using the data retured from the get request to create a new object instance usin
 const getArrangements = () => {
 	 $('#container').html('')
 	 $.get("/arrangements.json", function(arrangements){
-			 arrangements.forEach(arrangement => {
-				 let newArrangement = new Arrangement(arrangement)
-				 let arrangementList = newArrangement.arrangementIndex() 
-				 $('#container').append(arrangementList)
-			 })
-	 })
+		 arrangements.forEach(arrangement => {
+			 let newArrangement = new Arrangement(arrangement)
+			 let arrangementList = newArrangement.arrangementIndex() 
+			 $('#container').append(arrangementList)
+		})
+	})
 }
 ```
 	
