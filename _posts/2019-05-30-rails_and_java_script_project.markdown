@@ -32,15 +32,15 @@ For each page the work flow was quite similar, let's take the index page of arra
 
 2. Send a jQuery get request to get a json object with the data
 
-  ```
-	const getArrangements = () => {
+```
+const getArrangements = () => {
 		$('#container').html('')
 		$.get("/arrangements.json", function(arrangements){
 			})
 		})
 	}
- ```
-
+```
+ 
 3.  Build a new object using a constructor syntax
 
 	```
