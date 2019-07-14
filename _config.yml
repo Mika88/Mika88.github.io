@@ -1,15 +1,14 @@
 # Site settings
-title: 
+author: Mika Spivak
+title: My Coding Blog
 header-img: img/home-bg.png
 email: mikaspivak@gmail.com
-copyright_name: Mika88
+copyright_name: Mika Spivak
 description: > # this means to ignore newlines until "baseurl:"
-  
+  A place I can share about my coding journey 
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  Mika88
-learn_profile: Mika88
-email_username: mikaspivak@gmail.com
 
 # Build settings
 markdown: kramdown
