@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Custom Helper methods in Rails - why and when to use them"
-date:       2019-10-20 18:51:48 +0000
+date:       2019-10-20 14:51:48 -0400
 permalink:  custom_helper_methods_in_rails_-_why_and_when_to_use_them
 ---
 
@@ -51,7 +51,7 @@ And how about this method:
 	self.created_at.strftime("%b %e, %Y at %l:%M %p (UTC)")
 end
 ```
-This method refactors the created_at property to a more readable date and time expression, using  the `strftime` method. Should this method be in the model? No! 
+This method refactors the created_at property to a more readable date and time string, using  the `strftime` method. Should this method be in the model? No! 
 This method deals with presentation: how it should be rendered, no what should be rendered. 
 
 This method belongs to my `orders` controller, hence it should go to the `order.rb` file inside of the helpers folder:
