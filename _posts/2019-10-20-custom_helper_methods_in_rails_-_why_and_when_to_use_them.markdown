@@ -5,7 +5,7 @@ date:       2019-10-20 14:51:48 -0400
 permalink:  custom_helper_methods_in_rails_-_why_and_when_to_use_them
 ---
 
-One of the reasons I wanted to write a bolg about helper methods in Rails is becouse while I was working on my Rails application, often times I would get confused about which methods should be created in the model, and which should be created as helper methods. 
+One of the reasons I wanted to write a blog about helper methods in Rails is because while I was working on my Rails application, often times I would get confused about which methods should be created in the model, and which should be created as helper methods. 
 So I wanted to share my thoughts about this issue and perhaps help someone else who is confused. 
 
 **A refresher on MVC in Rails**
