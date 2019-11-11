@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "How to use interfaces in Java"
-date:       2019-11-11 00:50:05 +0000
+date:       2019-11-10 19:50:05 -0500
 permalink:  how_to_use_interfaces_in_java
 ---
 
@@ -10,8 +10,7 @@ permalink:  how_to_use_interfaces_in_java
 
 When classes are directly dependent on each other, a change in one class can affect the other class, or classes. This is not optimal as it can cause code breaks or the need to change related code in many different places. 
 
-**This is where interfaces come in
-**
+**This is where interfaces come in**
 
 Interfaces are used to minimize the impact of one class on the other.
 They mainly specify a behavior, a concept.
